@@ -7,8 +7,12 @@ import steelBackground from "public/steel-background.jpg";
 export default function Home() {
   return (
     <main>
-      <div className="bg-black/50 overflow-hidden">
-        <Image src={steelBackground} alt="" className="absolute -z-50 top-0" />
+      <div className="bg-black/50 relative overflow-hidden pt-28">
+        <Image
+          src={steelBackground}
+          alt=""
+          className="absolute -z-50 top-0 h-full"
+        />
         <Container className=" py-16 sm:py-24 lg:py-32 grid grid-cols-2 z-10">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl flex justify-center items-center w-full h-full">
             <div>
