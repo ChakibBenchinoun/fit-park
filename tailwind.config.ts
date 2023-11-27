@@ -1,5 +1,5 @@
 const { fontFamily } = require('tailwindcss/defaultTheme')
-
+import YellowBeckground from "./public/yellow-beckbground.jpg";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
@@ -15,6 +15,10 @@ module.exports = {
 				logo: ['var(--font-cinzel-decorative)', ...fontFamily.sans],
 			},
 		},
+    backgroundImage: {
+      'yellow-background': "url('/yellow-backbground.jpg')",
+      'steel-background': "url('/steel-background.jpg')",
+    }
 	},
 	plugins: [require('@tailwindcss/typography')],
 }
