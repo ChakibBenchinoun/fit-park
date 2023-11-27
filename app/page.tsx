@@ -27,7 +27,7 @@ export default function Home() {
               <div className="mt-10 flex items-center gap-x-6">
                 <a
                   href="#"
-                  className="rounded-full bg-gray-400 px-6 py-4 text-yellow-400 uppercase font-bold shadow-sm hover:bg-yellow-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="rounded-full bg-gray-500 px-5 py-3 text-yellow-400 uppercase font-bold shadow-sm hover:bg-gray-600 border border-yellow-500 hover:scale-105 transition"
                 >
                   Get started
                 </a>
