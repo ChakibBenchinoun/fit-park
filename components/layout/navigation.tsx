@@ -11,15 +11,16 @@ import { Container } from "../container";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/" },
+  { name: "About", href: "/about" },
   { name: "Services", href: "/" },
   { name: "Classes", href: "/" },
+  { name: "Pricing", href: "/" },
 ];
 export function Navigation() {
   return (
-    <header className="border border-yellow-500 absolute inset-x-0 top-0 z-50">
-      <nav aria-label="Global">
-        <Container className="flex items-center justify-between py-4">
+    <header className="absolute inset-x-0 top-0 z-50">
+      <nav aria-label="Global" className="border-b border-yellow-500">
+        <Container className="flex items-center justify-between py-3">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Company Name</span>
             <Image
@@ -61,7 +62,7 @@ export function Navigation() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-sm font-semibold leading-6 text-yellow-400 uppercase"
+                  className="text-sm tracking-wider font-bold leading-6 text-yellow-400 uppercase"
                 >
                   {item.name}
                 </a>

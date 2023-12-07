@@ -66,8 +66,8 @@ const navigation = [
 
 export function Footer() {
   return (
-    <footer className="">
-      <Container className="py-12 md:flex md:items-center md:justify-between">
+    <footer>
+      <Container className="py-16 md:flex md:items-center md:justify-between">
         <div className="flex justify-center space-x-6 md:order-2">
           {navigation.map((item) => (
             <a

@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import { Footer } from "../components/layout/footer";
 import { Navigation } from "../components/layout/navigation";
 import { cn } from "../lib/utils";
+import ScrollToTopButton from "@/components/layout/scroll-to-top";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full w-full scroll-smooth antialiased">
       <body className={cn(inter.className, "relative")}>
         <Navigation />
+        <ScrollToTopButton />
         {children}
         <Footer />
       </body>
