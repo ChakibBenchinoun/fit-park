@@ -1,19 +1,20 @@
 import Link from "next/link";
 import { Container } from "../container";
-import { ArrowRight } from "lucide-react";
+import { LuArrowRight } from "react-icons/lu";
+import { LinkButton } from "../buttons";
 
 export function AboutSection({ className }: { className?: string }) {
   return (
-    <Container className="pt-32 sm:pt-44 lg:pt-64 grid grid-cols-2 gap-x-16 place-items-center">
+    <Container className="pt-16 sm:pt-24 lg:pt-32 grid grid-cols-2 gap-x-16 place-items-center">
       <div className="relative max-w-2xl group">
-        <div className="bg-yellow-400 w-full -rotate-12 h-full -z-10 absolute border-yellow-500 rounded-2xl shadow-2xl border-2 transition-all group-hover:-rotate-6 group-hover:scale-105 duration-300" />
-        <div className="bg-yellow-300 w-full -rotate-6 h-full -z-0 absolute border-yellow-500 rounded-2xl shadow-2xl border-2 transition-all group-hover:-rotate-0 group-hover:scale-105 duration-300" />
-        <div className="rounded-2xl shadow-2xl border-2 rotate-0 transition-all group-hover:-rotate-12 group-hover:scale-105 duration-300 overflow-hidden">
+        <div className="bg-yellow-400 w-full -rotate-6 h-full -z-10 absolute border-yellow-500 rounded-2xl shadow-2xl border-2 transition-all group-hover:rotate-6 group-hover:scale-105 duration-300" />
+        <div className="bg-yellow-300 w-full -rotate-3 h-full -z-0 absolute border-yellow-500 rounded-2xl shadow-2xl border-2 transition-all group-hover:rotate-3 group-hover:scale-105 duration-300" />
+        <div className="rounded-2xl shadow-2xl border-2 rotate-0 transition-all group-hover:scale-105 duration-300 overflow-hidden">
           <video
             autoPlay
             loop
             muted
-            className="aspect-video object-cover rounded-2xl border-2 border-yellow-500"
+            className="aspect-square max-w-xl object-cover rounded-2xl border-2 border-yellow-500"
           >
             <source src="/succes.mp4" />
           </video>
@@ -30,17 +31,12 @@ export function AboutSection({ className }: { className?: string }) {
           welcoming atmosphere, we're committed to providing you with the tools
           and support you need to succeed on your fitness journey.
         </p>
-        <div className="mt-5 flex items-center group">
-          <Link
-            href="/"
-            className="text-yellow-600 group-hover:text-yellow-500 transition-all"
-          >
-            Find Out More
-            <div className="h-1 origin-left scale-x-0 bg-yellow-500 mt-1 transition-all group-hover:scale-x-100" />
-          </Link>
-
-          <ArrowRight className="w-5 h-5 text-yellow-600 ml-1 -mt-1.5 group-hover:translate-x-1 group-hover:text-yellow-500 transition-all" />
-        </div>
+        <LinkButton
+          href="/about"
+          label="Find Out More"
+          className="mt-5"
+          theme="dark"
+        />
       </div>
     </Container>
   );
