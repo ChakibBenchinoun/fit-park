@@ -21,7 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-full w-full scroll-smooth antialiased">
+    <html
+      lang="en"
+      className="h-full w-full scroll-smooth antialiased overflow-x-hidden"
+    >
       <body className={cn(inter.className, "relative")}>
         <Navigation />
         <ScrollToTopButton />

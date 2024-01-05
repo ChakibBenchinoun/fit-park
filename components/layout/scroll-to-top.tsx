@@ -1,8 +1,9 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { motion, useInView } from "framer-motion";
-import { ArrowUp } from "lucide-react";
+
 import React from "react";
+import { LuArrowUp } from "react-icons/lu";
 
 const ScrollToTopButton = () => {
   const ref = React.useRef<HTMLAnchorElement>(null);
@@ -27,7 +28,7 @@ const ScrollToTopButton = () => {
           inView ? "pointer-events-none" : ""
         )}
       >
-        <ArrowUp className="w-10 h-10  text-yellow-700" />
+        <LuArrowUp className="w-10 h-10  text-yellow-700" />
       </motion.a>
     </div>
   );
