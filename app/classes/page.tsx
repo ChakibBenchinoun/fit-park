@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroImage from "public/classes-hero.jpg";
 import { LuBattery, LuCalendar, LuClock } from "react-icons/lu";
-import Weightlifting from "public/Weightlifting.jpg";
+import weightlifting from "public/weightlifting.jpg";
 import cardio from "public/cardio.jpg";
 import hIIT from "public/HIIT.webp";
 import crossFit from "public/cross-fit.jpg";
@@ -22,7 +22,7 @@ const classes = [
       deficulty: "Medium",
       time: "30 min",
     },
-    image: Weightlifting,
+    image: weightlifting,
   },
   {
     name: "Cardio Class",
