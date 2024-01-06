@@ -13,7 +13,7 @@ import { TbDropletBolt } from "react-icons/tb";
 import { Carousel } from "@/components/carousel";
 import TeamSection from "@/components/about-page/team-section";
 
-export const items = [
+const items = [
   {
     title: "Abney Funeral Services",
     image: about2,
@@ -58,9 +58,9 @@ export default function About() {
 
       <Container className="pt-16 sm:pt-24 lg:pt-32 grid grid-cols-2 gap-x-16 place-items-center">
         <div className="relative max-w-2xl group">
-        <div className="bg-yellow-400 w-full -rotate-6 h-full -z-10 absolute border-yellow-500 rounded-2xl shadow-2xl border-2 transition-all group-hover:rotate-6 group-hover:scale-105 duration-300" />
-        <div className="bg-yellow-300 w-full -rotate-3 h-full -z-0 absolute border-yellow-500 rounded-2xl shadow-2xl border-2 transition-all group-hover:rotate-3 group-hover:scale-105 duration-300" />
-        <div className="rounded-2xl shadow-2xl border-2 rotate-0 transition-all group-hover:scale-105 duration-300 overflow-hidden">
+          <div className="bg-yellow-400 w-full -rotate-6 h-full -z-10 absolute border-yellow-500 rounded-2xl shadow-2xl border-2 transition-all group-hover:rotate-6 group-hover:scale-105 duration-300" />
+          <div className="bg-yellow-300 w-full -rotate-3 h-full -z-0 absolute border-yellow-500 rounded-2xl shadow-2xl border-2 transition-all group-hover:rotate-3 group-hover:scale-105 duration-300" />
+          <div className="rounded-2xl shadow-2xl border-2 rotate-0 transition-all group-hover:scale-105 duration-300 overflow-hidden">
             <Image
               src={about3}
               alt=""
@@ -100,9 +100,9 @@ export default function About() {
           </p>
         </div>
         <div className="relative max-w-2xl group">
-        <div className="bg-yellow-400 w-full -rotate-6 h-full -z-10 absolute border-yellow-500 rounded-2xl shadow-2xl border-2 transition-all group-hover:rotate-6 group-hover:scale-105 duration-300" />
-        <div className="bg-yellow-300 w-full -rotate-3 h-full -z-0 absolute border-yellow-500 rounded-2xl shadow-2xl border-2 transition-all group-hover:rotate-3 group-hover:scale-105 duration-300" />
-        <div className="rounded-2xl shadow-2xl border-2 rotate-0 transition-all group-hover:scale-105 duration-300 overflow-hidden">
+          <div className="bg-yellow-400 w-full -rotate-6 h-full -z-10 absolute border-yellow-500 rounded-2xl shadow-2xl border-2 transition-all group-hover:rotate-6 group-hover:scale-105 duration-300" />
+          <div className="bg-yellow-300 w-full -rotate-3 h-full -z-0 absolute border-yellow-500 rounded-2xl shadow-2xl border-2 transition-all group-hover:rotate-3 group-hover:scale-105 duration-300" />
+          <div className="rounded-2xl shadow-2xl border-2 rotate-0 transition-all group-hover:scale-105 duration-300 overflow-hidden">
             <Image
               src={about4}
               alt=""
