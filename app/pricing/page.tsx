@@ -162,7 +162,7 @@ export default function Pricing() {
                     tier.mostPopular ? "text-white" : "text-yellow-800"
                   )}
                 >
-                  {tier.price[frequency.value]}
+                  {tier.price[frequency.value as "monthly" | "annually"]}
                 </span>
                 <span className="text-sm font-semibold leading-6 text-gray-600">
                   {frequency.priceSuffix}
