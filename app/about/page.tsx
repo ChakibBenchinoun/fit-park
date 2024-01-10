@@ -67,14 +67,14 @@ export default function About() {
 
       <TeamSection />
 
-      <div className="bg-black/80 relative overflow-hidden py-10 sm:py-28 mx-10 rounded-3xl">
+      <div className="bg-black/80 relative overflow-hidden py-10 sm:py-28 sm:mx-10 sm:rounded-3xl">
         <Image
           src={steelBackground}
           alt=""
           className="absolute -z-50 top-0 h-full"
         />
         <Container>
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-yellow-600 sm:text-5xl drop-shadow-xl w-fit mx-auto">
+          <h2 className="text-3xl text-center lg:text-4xl xl:text-5xl font-bold tracking-tight text-yellow-600 sm:text-5xl drop-shadow-xl w-fit mx-auto">
             Vision for the Future
           </h2>
           <p className="mt-6 text-sm lg:text-base xl:text-lg text-gray-200 max-w-2xl mx-auto text-center">

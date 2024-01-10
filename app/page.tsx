@@ -51,7 +51,7 @@ export default function Home() {
         link="/classes"
         reverse
       />
-      <div className="w-full h-full flex-col lg:grid grid-cols-3 pt-32 sm:pt-44 lg:pt-64 px-10">
+      <div className="w-full h-full flex-col lg:grid grid-cols-3 pt-28 sm:pt-44 lg:pt-64 px-10">
         <div className="lg:pr-6 relative flex justify-center text-center rounded-2xl items-center w-full h-full bg-black py-10 lg:pt-5 lg:pb-0 border-y-2 border-yellow-500">
           <span className="text-xl text-yellow-400/50 absolute left-5 top-5">
             01.
