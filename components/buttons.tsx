@@ -38,13 +38,11 @@ export function PrimaryButton({
 export function LinkButton({
   label,
   href,
-  size = "sm",
   theme = "light",
   className,
 }: {
   label: string;
   href: string;
-  size?: "sm" | "lg";
   theme?: "light" | "dark";
   className?: string;
 }) {
@@ -53,7 +51,7 @@ export function LinkButton({
       href={href}
       className={cn(
         className,
-        "transition-all font-bold tracking-wide group inline-block",
+        "transition-all font-bold tracking-wide group inline-block text-sm lg:text-base",
         {
           "text-yellow-600 hover:text-yellow-500": theme === "dark",
           "text-yellow-400 hover:text-yellow-200": theme === "light",

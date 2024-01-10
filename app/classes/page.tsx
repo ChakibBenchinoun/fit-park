@@ -9,6 +9,7 @@ import cardio from "public/cardio.jpg";
 import hIIT from "public/HIIT.webp";
 import crossFit from "public/cross-fit.jpg";
 import pilates from "public/pilates.jpg";
+import HeroSection from "@/components/secondary-hero-section";
 
 const classes = [
   {
@@ -78,48 +79,16 @@ export default function Classes() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="bg-black/50 relative flex items-end overflow-hidden pt-28 shadow-2xl shadow-yellow-500 h-[50vw]">
-        <Image
-          src={HeroImage}
-          alt=""
-          className="absolute -z-50 top-0 w-full h-full object-cover object-top"
-        />
-        <div className="mb-20 ml-14">
-          <Link
-            href="/"
-            className="hover:text-yellow-400 transition mr-1 text-4xl text-white"
-          >
-            Home
-          </Link>{" "}
-          <span className="text-4xl text-white">||</span>{" "}
-          <span className="border-b-4 border-yellow-400 font-bold pb-1 ml-1 text-4xl text-white">
-            Classes
-          </span>
-        </div>
-      </div>
-
+      <HeroSection image={HeroImage} />
       <Container className="pt-16 sm:pt-24 lg:pt-32 pb-16">
         {classes.map((classe, index) => (
           <div
             key={`${classe}-${index}`}
             className={cn(
-              "grid grid-cols-2 gap-x-8",
-              index !== 0 ? "pt-4 sm:pt-8 lg:pt-16" : ""
+              "md:grid grid-cols-2 gap-x-8",
+              index !== 0 ? "pt-16" : null
             )}
           >
-            <div
-              className={cn(
-                Number.isInteger(index / 2)
-                  ? "order-1"
-                  : "order-2 flex justify-end"
-              )}
-            >
-              <Image
-                src={classe.image}
-                alt={classe.name}
-                className="object-cover rounded-2xl border-2 border-yellow-500 aspect-square max-w-2xl"
-              />
-            </div>
             <div
               className={cn(
                 Number.isInteger(index / 2) ? "order-2 justify-end" : "order-1",
@@ -130,36 +99,50 @@ export default function Classes() {
                 <span className="text-lg p-5 rounded-full text-yellow-900 border border-yellow-500">
                   {index + 1}
                 </span>
-                <h2 className="text-4xl font-bold tracking-tight text-yellow-600 sm:text-5xl drop-shadow-xl">
+                <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-yellow-600 drop-shadow-xl">
                   {classe.name}
                 </h2>
-                <p className="mt-8 text-lg leading-8 text-gray-900">
+                <p className="mt-8 text-sm lg:text-base xl:text-lg text-gray-900">
                   {classe.details.paragraph}
                 </p>
-                <p className="mt-3 font-semibold text-lg leading-8 text-gray-900">
+                <p className="mt-3 font-semibold text-sm lg:text-base xl:text-lg text-gray-900">
                   Benefits: {classe.details.benefits}
                 </p>
                 <div className="mt-8 flex">
                   <div className="group">
-                    <span className="text-yellow-600 flex items-center group-hover:text-yellow-500 transition-all">
+                    <span className="text-yellow-600 flex text-sm lg:text-base items-center group-hover:text-yellow-500 transition-all">
                       <LuCalendar className="mr-1" />
                       {classe.details.date}
                     </span>
                   </div>
                   <div className="group">
-                    <span className="text-yellow-600 flex items-center ml-4 group-hover:text-yellow-500 transition-all">
+                    <span className="text-yellow-600 flex text-sm lg:text-base items-center ml-4 group-hover:text-yellow-500 transition-all">
                       <LuBattery className="mr-1" />
                       {classe.details.deficulty}
                     </span>
                   </div>
                   <div className="group">
-                    <span className="text-yellow-600 flex items-center group-hover:text-yellow-500 ml-4 transition-all">
+                    <span className="text-yellow-600 flex text-sm lg:text-base items-center group-hover:text-yellow-500 ml-4 transition-all">
                       <LuClock className="mr-1" />
                       {classe.details.time}
                     </span>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className={cn(
+                Number.isInteger(index / 2)
+                  ? "order-1"
+                  : "order-2 flex justify-end",
+                "max-w-2xl mt-8 md:mt-0"
+              )}
+            >
+              <Image
+                src={classe.image}
+                alt={classe.name}
+                className="object-cover rounded-2xl border-2 border-yellow-500 aspect-video md:aspect-square"
+              />
             </div>
           </div>
         ))}

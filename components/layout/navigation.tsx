@@ -11,8 +11,8 @@ import {
 } from "../ui/dropdown-menu";
 import { Container } from "../container";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 import { PrimaryButton } from "../buttons";
+import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -31,11 +31,11 @@ export function Navigation() {
         className="from-white via-black to-white shadow-2xl shadow-black relative"
       >
         <div className="backdrop-blur-sm bg-black/40 absolute w-full h-full -z-50" />
-        <Container className="flex items-center justify-between py-3">
+        <Container className="flex items-center justify-between py-4">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Company Name</span>
             <Image
-              className="h-20 w-auto"
+              className="h-16 md:h-20 w-auto"
               src={DarkLogo}
               alt=""
               width={500}
@@ -48,23 +48,37 @@ export function Navigation() {
                 <DropdownMenuTrigger asChild>
                   <button
                     type="button"
-                    className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                    className="relative w-fit h-full group py-2 outline-none"
                   >
-                    Menu
+                    <div className="relative z-20">
+                      <span className="px-3 py-2 text-sm rounded-full bg-yellow-400 group-hover:text-yellow-700 text-yellow-800 uppercase font-bold tracking-wide group-hover:bg-yellow-300 border-b-2 border-l-2 border-yellow-200 transition duration-200">
+                        Menu
+                      </span>
+                    </div>
+                    <div className="absolute z-10 bg-yellow-700 w-full h-full -translate-x-1 translate-y-1.5 group-hover:rotate-3 rounded-full inset-0 transition duration-200 group-hover:scale-200 border-b border-l border-yellow-200" />
                   </button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="p-4 lg:hidden">
+                <DropdownMenuContent
+                  className="absolute -right-14 flex w-60 flex-col bg-yellow-100 px-0 py-4 lg:hidden"
+                  sideOffset={35}
+                >
                   {navigation.map((item) => (
-                    <DropdownMenuItem key={item.name}>
-                      <a
-                        key={item.name}
+                    <DropdownMenuItem key={item.name} className="w-full">
+                      <Link
                         href={item.href}
-                        className="text-sm font-semibold leading-6 text-gray-900"
+                        key={item.name}
+                        className="mx-1 mt-2 w-full bg-yellow-400 hover:bg-yellow-500 text-yellow-900 font-semibold py-3 px-4 transition-all rounded-lg"
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     </DropdownMenuItem>
                   ))}
+                  <PrimaryButton
+                    size="lg"
+                    label="Contact"
+                    href="/contact"
+                    className="mx-auto mt-4"
+                  />
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
@@ -83,7 +97,12 @@ export function Navigation() {
               ))}
             </div>
           </div>
-          <PrimaryButton size="lg" label="Contact" href="/contact" />
+          <PrimaryButton
+            size="lg"
+            label="Contact"
+            href="/contact"
+            className="hidden lg:block"
+          />
         </Container>
       </nav>
     </header>

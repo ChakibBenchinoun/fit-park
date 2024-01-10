@@ -70,7 +70,7 @@ function CarouselItem({
           {item.content ? (
             showTitle ? (
               <div className="flex flex-col w-full h-full">
-                <h3 className="z-10 tracking-wide text-xl font-semibold text-yellow-400 mx-auto mt-5">
+                <h3 className="z-10 tracking-wide text-lg lg:text-xl font-semibold text-yellow-400 mx-auto mt-5">
                   {item.title}
                 </h3>
                 <AnimatedDiv
@@ -87,7 +87,7 @@ function CarouselItem({
                   }}
                   className="z-10 max-w-xs mx-auto"
                 >
-                  <p className="text-yellow-100 mt-5 text-center">
+                  <p className="text-yellow-100 mt-5 text-center text-sm lg:text-base">
                     {item.content}
                   </p>
                 </AnimatedDiv>
@@ -116,7 +116,7 @@ function CarouselItem({
               className="absolute inset-0 z-50 flex flex-col justify-end"
             >
               <div className="flex h-1/3 items-center justify-center">
-                <h3 className="font-heading tracking-wide text-yellow-500 font-semibold">
+                <h3 className="font-heading text-lg lg:text-xl tracking-wide text-yellow-500 font-semibold">
                   {item.title}
                 </h3>
               </div>

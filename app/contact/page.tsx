@@ -4,44 +4,26 @@ import Image from "next/image";
 import HeroImage from "public/classes-hero.jpg";
 import MapImage from "public/map.png";
 import Link from "next/link";
+import HeroSection from "@/components/secondary-hero-section";
 
 export default function Contact() {
   return (
     <div className="bg-yellow-50">
-      <div className="bg-black/50 relative flex items-center overflow-hidden pt-28 shadow-2xl shadow-yellow-500 h-[35vw]">
-        <Image
-          src={HeroImage}
-          alt=""
-          className="absolute -z-50 top-0 w-full h-full object-cover object-top"
-          width={500}
-          height={500}
-        />
-        <Container className="mx-0">
-          <Link
-            href="/"
-            className="hover:text-yellow-400 transition mr-1 text-4xl text-white"
-          >
-            Home
-          </Link>{" "}
-          <span className="text-4xl text-white">||</span>{" "}
-          <span className="border-b-4 border-yellow-400 font-bold pb-1 ml-1 text-4xl text-white">
-            Classes
-          </span>
-        </Container>
-      </div>
+      <HeroSection image={HeroImage} />
+
       {/* Get in touch section */}
-      <Container className="grid grid-cols-1 lg:grid-cols-2 pt-48">
-        <div className="relative lg:static ">
-          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <h2 className="text-4xl font-bold tracking-tight text-yellow-600 sm:text-5xl drop-shadow-xl">
+      <Container className="grid grid-cols-1 md:grid-cols-2 md:gap-x-5 pt-16 sm:pt-24 lg:pt-32">
+        <div className="relative lg:static">
+          <div className=" max-w-xl lg:mx-0 lg:max-w-lg">
+            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-yellow-600 sm:text-5xl drop-shadow-xl">
               Get in touch
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 xl:text-lg text-gray-600">
               Proin volutpat consequat porttitor cras nullam gravida at. Orci
               molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
               Arcu sed malesuada et magna.
             </p>
-            <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
+            <dl className="mt-10 space-y-4 text-sm md:text-base text-gray-600">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Address</span>
@@ -50,11 +32,7 @@ export default function Contact() {
                     aria-hidden="true"
                   />
                 </dt>
-                <dd>
-                  545 Mavis Island
-                  <br />
-                  Chicago, IL 99191
-                </dd>
+                <dd>545 Mavis Island Chicago, IL 99191</dd>
               </div>
               <div className="flex gap-x-4">
                 <dt className="flex-none">
@@ -96,7 +74,7 @@ export default function Contact() {
         <form
           action="#"
           method="POST"
-          className="max-w-xl bg-yellow-100 rounded-2xl border-2 border-yellow-300"
+          className="md:max-w-xl bg-yellow-100 rounded-2xl border-2 border-yellow-300 mt-8 md:mt-0"
         >
           <div className="mx-auto max-w-xl lg:max-w-lg px-5 py-10">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -197,7 +175,7 @@ export default function Contact() {
           </div>
         </form>
       </Container>
-      <Container className="mx-10 pt-24 pb-48">
+      <Container className="xl:mx-10 pt-24 pb-48">
         <Image
           className="w-full rounded-2xl border-2 border-yellow-300"
           src={MapImage}

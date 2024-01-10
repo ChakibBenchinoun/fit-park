@@ -5,7 +5,7 @@ export function Container(props: React.ComponentProps<"div">) {
 
   return (
     <div
-      className={cn("mx-auto px-6 sm:px-10 lg:px-28", className)}
+      className={cn("mx-auto px-6 sm:px-10 lg:px-20", className)}
       {...delegated}
     >
       {children}

@@ -32,20 +32,20 @@ const people = [
 
 export default function TeamSection() {
   return (
-    <Container className="py-24 md:py-32">
-      <div className="grid grid-cols-1 gap-x-8 gap-y-20 xl:grid-cols-5">
-        <div className="sticky top-0 h-fit max-w-2xl xl:col-span-2 py-10 bg-white">
-          <h2 className="text-4xl font-bold tracking-tight text-yellow-600 sm:text-5xl drop-shadow-xl">
+    <Container className="py-24 sm:py-32 lg:py-44">
+      <div className="grid grid-cols-1 gap-x-8 lg:gap-y-20 lg:grid-cols-5">
+        <div className="sticky top-0 h-fit text-center lg:text-left lg:max-w-2xl lg:col-span-2 py-10 bg-white">
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-yellow-600 drop-shadow-xl">
             Our Team
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-3 lg:mt-6 xl:text-lg text-gray-600 max-w-xl mx-auto lg:ml-0">
             We’re a dynamic group of individuals who are passionate about what
             we do and dedicated to delivering the best results for our clients.
           </p>
         </div>
         <ul
           role="list"
-          className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3 pt-10"
+          className="-mt-12 space-y-12 divide-y divide-gray-200 lg:col-span-3 pt-10"
         >
           {people.map((person) => (
             <li
@@ -58,13 +58,13 @@ export default function TeamSection() {
                 alt=""
               />
               <div className="max-w-xl flex-auto">
-                <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
+                <h3 className="text-lg lg:text-xl font-semibold leading-8 tracking-tight text-gray-900">
                   {person.name}
                 </h3>
                 <p className="text-base leading-7 text-gray-600">
                   {person.role}
                 </p>
-                <p className="mt-6 text-base leading-7 text-gray-600">
+                <p className="mt-3 lg:mt-6 xl:text-lg text-gray-600">
                   {person.bio}
                 </p>
                 <ul role="list" className="mt-6 flex gap-x-6">

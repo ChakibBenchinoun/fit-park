@@ -37,10 +37,10 @@ export function ServicesSection() {
   return (
     <div className="pb-64 pt-52 flex-col justify-center items-center">
       <Container className="mx-auto max-w-4xl">
-        <h2 className="text-4xl font-bold text-center tracking-tight text-yellow-600 sm:text-5xl drop-shadow-xl">
+        <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-center tracking-tight text-yellow-600 drop-shadow-xl">
           We Offer Exclusive Services For Build Health
         </h2>
-        <p className="mt-6 text-lg leading-8 text-center text-gray-900">
+        <p className="mt-6 text-sm lg:text-base xl:text-lg text-center text-gray-900">
           At EliteGYM, we're more than just a fitness facility; we're a
           community dedicated to helping you achieve your health and fitness
           goals. With state-of-the-art equipment, experienced trainers, and a
