@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["cdn.sanity.io", "nucloud.com"],
+    domains: ["cdn.sanity.io", "nucloud.com", "images.unsplash.com"],
   },
   experimental: {
     appDir: true,
