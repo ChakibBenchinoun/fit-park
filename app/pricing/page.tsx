@@ -124,9 +124,9 @@ export default function Pricing() {
               key={tier.id}
               className={cn(
                 tier.mostPopular
-                  ? "z-10 scale-110 border-4 border-red-900 bg-yellow-500 lg:px-8 xl:px-10 lg:py-16 mx-5 lg:mx-0"
+                  ? "z-10 scale-110 border-4 border-red-900 bg-yellow-500  sm:px-8 xl:px-10 lg:py-16 mx-5 lg:mx-0"
                   : "border-2 border-red-800 bg-yellow-100/90 lg:px-8 lg:py-10 xl:px-10 xl:py-12",
-                "relative rounded-3xl flex-col px-8 py-8"
+                "relative rounded-3xl flex-col px-8 py-16"
               )}
             >
               {tier.mostPopular ? (
