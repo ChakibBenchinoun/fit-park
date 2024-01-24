@@ -11,8 +11,8 @@ import ScrollToTopButton from "@/components/layout/scroll-to-top";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Company",
-  description: "Company Description",
+  title: "FIT Park",
+  description: "A NEW ART OF FITNESS IN YOUR TOWN",
 };
 
 export default function RootLayout({
