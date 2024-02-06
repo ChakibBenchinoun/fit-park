@@ -1,15 +1,11 @@
 import { Container } from "@/components/container";
 import Image from "next/image";
-import Link from "next/link";
 import HeroImage from "public/about-page-hero.jpg";
 import about3 from "public/about3.jpg";
 import about4 from "public/about4.jpg";
 import about2 from "public/about2.jpg";
 import classes from "public/classes.jpg";
 import steelBackground from "public/steel-background.jpg";
-import { LuDumbbell } from "react-icons/lu";
-import { PiHeartHalfDuotone, PiUsersThree } from "react-icons/pi";
-import { TbDropletBolt } from "react-icons/tb";
 import { Carousel } from "@/components/carousel";
 import TeamSection from "@/components/about-page/team-section";
 import HeroSection from "@/components/secondary-hero-section";

@@ -1,8 +1,6 @@
-import Link from "next/link";
 import { Container } from "../container";
 import classesImage from "public/classes.jpg";
 import Image from "next/image";
-import { LuArrowRight } from "react-icons/lu";
 import { LinkButton } from "../buttons";
 
 export function ClassesSection() {

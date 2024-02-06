@@ -1,7 +1,6 @@
 import { Container } from "@/components/container";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import Link from "next/link";
 import HeroImage from "public/classes-hero.jpg";
 import { LuBattery, LuCalendar, LuClock } from "react-icons/lu";
 import weightlifting from "public/weightlifting.jpg";

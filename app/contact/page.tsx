@@ -3,7 +3,6 @@ import { LuBuilding, LuMail, LuPhone } from "react-icons/lu";
 import Image from "next/image";
 import HeroImage from "public/classes-hero.jpg";
 import MapImage from "public/map.png";
-import Link from "next/link";
 import HeroSection from "@/components/secondary-hero-section";
 
 export default function Contact() {
