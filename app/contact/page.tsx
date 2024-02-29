@@ -175,12 +175,14 @@ export default function Contact() {
         </form>
       </Container>
       <Container className="xl:mx-10 pt-24 pb-48">
-        <Image
-          className="w-full rounded-2xl border-2 border-yellow-300"
-          src={MapImage}
-          alt=""
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.161692876865!2d-0.5975583234834041!3d35.722241727718796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7e6380fe5e66b3%3A0x3c14ff97a6e46500!2sComplexe%20sportif%20fitparkoran!5e0!3m2!1sen!2sdz!4v1709213688504!5m2!1sen!2sdz"
           width={500}
           height={500}
+          className="w-full rounded-2xl border-2 border-yellow-300"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
         />
       </Container>
       {/* map section */}
